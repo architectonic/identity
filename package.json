@@ -1,0 +1,26 @@
+{
+  "name": "architectonic-identity",
+  "version": "0.1.0",
+  "description": "Runtime-neutral actor-model package for humans, users, agents, teams, organizations, and roles in human-agent collaboration.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "architectonic-identity": "./bin/architectonic-identity.js"
+  },
+  "files": [
+    "bin",
+    "doctrine",
+    "AGENTS.md",
+    "index.md",
+    "README.md",
+    "START_HERE.md"
+  ],
+  "keywords": [
+    "identity",
+    "actors",
+    "privacy",
+    "governance",
+    "okf",
+    "architectonic"
+  ]
+}
