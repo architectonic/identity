@@ -1,6 +1,6 @@
 {
   "name": "architectonic-identity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Runtime-neutral actor-model package for humans, users, agents, teams, organizations, and roles in human-agent collaboration.",
   "license": "Apache-2.0",
   "type": "module",

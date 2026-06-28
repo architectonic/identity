@@ -17,6 +17,12 @@ Install it with:
 npx architectonic add identity
 ```
 
+Optional addon for knowledge-heavy installs:
+
+```bash
+npx architectonic add living-knowledge
+```
+
 It defines how to describe humans, users, agents, teams, organizations, and roles without turning private life, temporary mood, jokes, frustration, or conversational style into permanent ontology.
 
 This repository is not a private profile store. It contains doctrine, schemas, templates, examples, and interrogation procedures for building identity records elsewhere.
@@ -101,6 +107,7 @@ project      = defines the operating unit where work happens
 skills       = defines reusable procedures
 knowledge    = stores the disclosed corpus of knowledge and evidence
 meta         = stores upkeep and self-improvement procedures
+living-knowledge = optional addon for campaign-based maintenance of the knowledge corpus
 ```
 
 Identity records should be instantiated into private vaults, project workspaces, or runtime-specific contexts. This public package should only contain general doctrine, schemas, templates, and examples.
