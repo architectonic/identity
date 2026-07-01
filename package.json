@@ -4,11 +4,7 @@
   "description": "Runtime-neutral actor-model package for humans, users, agents, teams, organizations, and roles in human-agent collaboration.",
   "license": "Apache-2.0",
   "type": "module",
-  "bin": {
-    "architectonic-identity": "./bin/architectonic-identity.js"
-  },
   "files": [
-    "bin",
     "doctrine",
     "AGENTS.md",
     "index.md",
