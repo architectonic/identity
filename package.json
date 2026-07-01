@@ -4,6 +4,13 @@
   "description": "Runtime-neutral actor-model package for humans, users, agents, teams, organizations, and roles in human-agent collaboration.",
   "license": "Apache-2.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/architectonic/identity.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "doctrine",
     "AGENTS.md",
