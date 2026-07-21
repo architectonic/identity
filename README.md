@@ -1,5 +1,7 @@
 # Actors and Authority
 
+**Architectonic layer:** [main CLI and adaptive profiles](https://github.com/architectonic/architectonic)
+
 > **Status: experimental, pre-1.0.** This layer models collaboration-relevant actors and permissions. It is not a biography store, surveillance system, authentication provider, or inference engine for personality and motives.
 
 `identity` is a **standalone layer** for:
