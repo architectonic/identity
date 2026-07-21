@@ -1,42 +1,36 @@
 ---
 type: Entry Point
 title: Start Here
-description: First-run traversal guide for agents using the identity actor-model bundle.
-tags: [start-here, identity, actors, privacy, okf]
-okf_version: "0.1"
-status: draft
+description: First-run traversal guide for the actors and authority layer.
+tags: [identity, actors, authority, delegation, privacy]
+protocol_version: "0.2.0"
+status: experimental
 ---
 
 # Start Here
 
-This is the first-run guide for agents reading `identity`.
+Use this package to understand the participating actors, not to infer a biography.
 
-## First Run
+## Read order
 
-1. Read `AGENTS.md` for repository rules.
-2. Read `README.md` for package purpose and boundaries.
-3. Read `index.md` for progressive disclosure.
-4. Read `doctrine/index.md` for available doctrine concepts.
-5. Read `doctrine/privacy.md` before handling actor-specific material.
-6. Read `doctrine/identity.md` before creating or editing actor-model templates.
-7. Read `doctrine/authority.md` when decisions, delegation, approval, or stop authority are involved.
+1. Read `README.md` for the layer boundary.
+2. Read `doctrine/privacy.md` before handling actor-specific material.
+3. Read `doctrine/identity.md` before creating or editing actor records.
+4. Read `doctrine/authority.md` when decisions, delegation, approval, override, escalation, or stopping authority are involved.
+5. Read `doctrine/incentives.md` when cost, benefit, risk, ownership, or conflicts matter.
 
-## Identity Boundary
+## Core distinction
 
 ```text
-Identity = useful actor model for collaboration
-Private biography = out of scope
-Temporary mood = communication context, not durable identity
+actor model            durable collaboration-relevant facts
+private biography      out of scope unless explicitly required and authorized
+temporary communication context  not durable identity
 ```
 
-## Gathering Rule
+Promote actor knowledge only when it is explicit, confirmed, necessary, scoped, and safe to store.
 
-Only promote identity knowledge when it is explicit, confirmed, necessary, and safe for the target context.
-
-## Canonical Loop
+## Operating loop
 
 ```text
-Read → Classify → Inspect → Plan → Act → Verify → Reconcile → Handoff
+Read -> classify -> inspect authority -> act within scope -> verify -> reconcile -> hand off
 ```
-
-Use this loop for all durable changes.

@@ -1,7 +1,7 @@
 {
   "name": "architectonic-identity",
-  "version": "0.1.2",
-  "description": "Runtime-neutral actor-model package for humans, users, agents, teams, organizations, and roles in human-agent collaboration.",
+  "version": "0.2.0",
+  "description": "Actors and authority layer for roles, delegation, incentives, privacy, and collaboration boundaries.",
   "license": "Apache-2.0",
   "type": "module",
   "repository": {
@@ -12,18 +12,25 @@
     "access": "public"
   },
   "files": [
+    "README.md",
+    "CHANGELOG.md",
+    "architectonic.protocol.json",
     "doctrine",
     "AGENTS.md",
     "index.md",
-    "README.md",
-    "START_HERE.md"
+    "START_HERE.md",
+    "scripts"
   ],
+  "scripts": {
+    "validate": "node scripts/validate-package.mjs",
+    "test": "npm run validate"
+  },
   "keywords": [
+    "architectonic",
     "identity",
-    "actors",
-    "privacy",
-    "governance",
-    "okf",
-    "architectonic"
+    "human-ai",
+    "agents",
+    "provenance",
+    "governance"
   ]
 }

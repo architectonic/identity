@@ -1,77 +1,36 @@
----
-type: Entry Point
-title: identity
-description: Runtime-neutral actor model for humans, users, agents, teams, organizations, roles, authority, incentives, and privacy.
-tags: [identity, actors, users, agents, authority, incentives, privacy, okf]
-okf_version: "0.1"
-status: draft
----
+# Actors and Authority
 
-# identity
+> **Status: experimental, pre-1.0.** This package defines one layer of the Architectonic protocol. Evaluate it through its canonical contract, package validator, conformance manifest, and explicit limitations.
 
-```bash
-npx architectonic add identity
-```
+`identity` defines who participates, what each actor may decide or delegate, and what must remain private or unknown.
 
-`identity` defines how to describe humans, users, agents, teams, organizations, and roles without turning private life, temporary mood, or conversational style into permanent ontology.
+## What it gives an agent
 
-This repository is not a private profile store. It contains doctrine, schemas, templates, examples, and interrogation procedures for building identity records elsewhere.
+- one predictable home for this concern;
+- a canonical entry that can be found through `architectonic map`;
+- a machine-readable `architectonic.protocol.json`;
+- boundaries that prevent neighboring layers from silently owning the same concept;
+- package validation that runs against both the source checkout and the exact npm tarball.
 
-## In the ensemble
+## Canonical entry
 
 ```text
-constitution      composition contract for the ensemble
-doctrine          purpose, principles, ontology, epistemology, ethics, governance, incentives
-identity          actors, roles, authority, delegation, incentives, privacy
-project           operating-unit context, sources, decisions, risks, continuity
-skills            reusable procedures, verification, failure handling
-knowledge         claims, sources, evidence, uncertainty, known unknowns
-models            model metadata, evaluations, capability requirements, routing policy
-agents            software actors composed from identity, skills, models, knowledge, permissions
-living-knowledge  optional: governed maintenance of frequently changing corpora
-meta              audit, upkeep, drift review, revision policy
+START_HERE.md
 ```
-
-Identity answers who is participating, what each actor is responsible for, what they may decide or delegate, what preferences are durable and confirmed, what constraints must be respected, and what must remain private or unknown.
-
-## Commands
-
-```bash
-npx architectonic add identity
-npx architectonic add identity --source npm
-npx architectonic init
-npx architectonic list
-npx architectonic doctor
-```
-
-CLI: https://github.com/architectonic/architectonic
-
-## What identity means here
-
-Identity is a working model of an actor in a collaboration system:
-
-```text
-actor            human, user, agent, team, organization, or role
-role             what this actor is responsible for
-preferences      durable working preferences, explicitly confirmed
-constraints      boundaries that must not be violated
-communication    useful interaction context, not permanent ontology
-authority        what this actor can decide, approve, delegate, override, or stop
-incentives       declared or observable costs, benefits, risks, stakes, conflicts
-delegation       what may be assigned, accepted, refused, or escalated
-privacy          what must not be stored, exposed, inferred, or transferred
-```
-
-## Core rule
-
-Do not infer identity or incentives from vibes. Promote identity knowledge only when it is explicitly confirmed, repeatedly validated, necessary for collaboration, and safe to store in the target context.
-
-Humor, impatience, profanity, shorthand, stress, and temporary frustration are communication context, not durable identity.
 
 ## Boundary
 
-This repository may contain general actor doctrine, schemas, templates, anonymized examples, privacy rules, and authority models.
+This is not biography, surveillance, authentication infrastructure, or a store for temporary conversational mood.
 
-It must not contain private profiles, private names or identifiers, private communications, client-sensitive data, project-specific facts, runtime secrets, or raw transcript dumps.
+## Install
 
-Identity records belong in private vaults or project workspaces. Identity is for collaboration, not surveillance.
+```bash
+npx architectonic@latest add identity --source npm
+npx architectonic@latest verify
+```
+
+Installing a layer provides reusable public structure. Organization-specific facts, private knowledge, credentials, runtime state, and local decisions belong only in controlled workspace instances.
+
+## Claims
+
+This package claims only that its declared structure and validators are inspectable and reproducible. It does not claim universal performance improvement or domain correctness.
