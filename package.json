@@ -1,6 +1,6 @@
 {
   "name": "architectonic-identity",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Actors and authority layer for roles, delegation, incentives, privacy, and collaboration boundaries.",
   "license": "Apache-2.0",
   "type": "module",
@@ -19,6 +19,7 @@
     "AGENTS.md",
     "index.md",
     "START_HERE.md",
+    "STANDALONE.md",
     "scripts"
   ],
   "scripts": {
