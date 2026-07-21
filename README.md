@@ -1,36 +1,18 @@
 # Actors and Authority
 
-> **Status: experimental, pre-1.0.** This package defines one layer of the Architectonic protocol. Evaluate it through its canonical contract, package validator, conformance manifest, and explicit limitations.
+> **Status: experimental, pre-1.0.** This layer models collaboration-relevant actors and permissions. It is not a biography store, surveillance system, authentication provider, or inference engine for personality and motives.
 
-`identity` defines who participates, what each actor may decide or delegate, and what must remain private or unknown.
+`identity` is a **standalone layer** for:
 
-## What it gives an agent
-
-- one predictable home for this concern;
-- a canonical entry that can be found through `architectonic map`;
-- a machine-readable `architectonic.protocol.json`;
-- boundaries that prevent neighboring layers from silently owning the same concept;
-- package validation that runs against both the source checkout and the exact npm tarball.
-
-## Canonical entry
-
-```text
-START_HERE.md
-```
-
-## Boundary
-
-This is not biography, surveillance, authentication infrastructure, or a store for temporary conversational mood.
-
-## Install
+- humans, teams, organizations, agents, and roles;
+- decision, approval, delegation, override, and stop authority;
+- access, spending, mutation, and privacy boundaries;
+- declared responsibilities, incentives, risks, and escalation rules.
 
 ```bash
-npx architectonic@latest add identity --source npm
-npx architectonic@latest verify
+npx architectonic@latest init actors --preset identity --source npm
 ```
 
-Installing a layer provides reusable public structure. Organization-specific facts, private knowledge, credentials, runtime state, and local decisions belong only in controlled workspace instances.
+Use it when the material uncertainty is **who may do what**. A project or constitution is not required unless those concerns also need durable structure.
 
-## Claims
-
-This package claims only that its declared structure and validators are inspectable and reproducible. It does not claim universal performance improvement or domain correctness.
+See [`STANDALONE.md`](./STANDALONE.md) and [`START_HERE.md`](./START_HERE.md).
